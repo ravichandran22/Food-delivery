@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+}
+.Banner{
+    background-image: url("../Images/indian-condiments-with-copy-space-view.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    height: 600px;
+}
+.Banner .banner-contents{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.Category{
+    overflow: hidden;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.Category .row{
+    justify-content: center;
+    align-items: center;
+}
+.category-icon{
+    text-align: center;
+}
+.Banner-mass{
+    padding: 40px;
+    text-align: center;
+}
+.Banner-mass .banner-right-content{
+    padding-bottom: 20px;
+}
+.Banner-mass .banner-left-content{
+    padding-top: 20px;
+}
+.Banner-mass img{
+    border-radius: 20px;
+}
+.Banner-mass h3{
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+/* Product */
+.product-wrapper{
+    width: 285px;
+}
+.Product{
+    overflow: hidden;
+    padding: 40px;
+}
+.Product .row{
+    padding: 40px;
+    overflow: hidden;
+}
+.product-content{
+    padding: 20px 0px 20px;
+}
+
+/* Best Seller */
+.Best-seller{
+    padding: 40px;
+    overflow: hidden;
+    position: relative;
+}
+.left-col{
+    position: relative;
+}
+.left-col .content-wrapper{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.left-col .content-wrapper h2{
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+
+/* Product List */
+.Product-list{
+    padding: 40px;
+    overflow: hidden;
+}
