@@ -3,6 +3,29 @@
     margin: 0;
     font-family: 'Roboto';
 }
+/* Header */
+.header{
+    padding: 10px 40px;
+    position: relative;
+}
+.button{
+    justify-content: end;
+}
+.menu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.menu ul{
+    list-style-type: none;
+    justify-content: center;
+}
+.menu ul li{
+    display: inline-block;
+    padding: 10px;
+    align-items: center;
+}
 .Banner{
     background-image: url("../Images/indian-condiments-with-copy-space-view.jpg");
     background-position: center;
