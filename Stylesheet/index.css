@@ -5,8 +5,11 @@
 }
 /* Header */
 .header{
-    padding: 10px 40px;
-    position: relative;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 2;
 }
 .button{
     justify-content: end;
@@ -20,11 +23,13 @@
 .menu ul{
     list-style-type: none;
     justify-content: center;
+    margin-bottom: 0px;
 }
 .menu ul li{
     display: inline-block;
     padding: 10px;
     align-items: center;
+    font-size: 18px;
 }
 .Banner{
     background-image: url("../Images/indian-condiments-with-copy-space-view.jpg");
@@ -43,6 +48,13 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.banner-contents h1{
+    font-size: 50px;
+}
+.banner-contents p{
+    font-size: 18px;
+}
+/* Category */
 .Category{
     overflow: hidden;
     padding-left: 20px;
@@ -57,6 +69,18 @@
 }
 .category-icon{
     text-align: center;
+    padding: 10px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: aliceblue;
+}
+.category-icon:hover{
+    border-color: #000;
+}
+.category-icon a{
+    color: #000;
+    text-decoration: none;
 }
 .Banner-mass{
     padding: 40px;
@@ -115,4 +139,44 @@
 .Product-list{
     padding: 40px;
     overflow: hidden;
+}
+
+/* Blog */
+.blog{
+    overflow: hidden;
+    padding: 40px;
+}
+.blog-item{
+    text-align: center;
+}
+.blog h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.blog-content h3{
+    padding: 20px 0px 20px;
+}
+
+/* Footer */
+.footer{
+    padding: 80px 40px;
+    overflow: hidden;
+    background-color: aliceblue;
+}
+.footer ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.footer ul li{
+    padding-bottom: 10px;
+}
+.footer-links h3{
+    padding-bottom: 20px;
+}
+.Contact-Us h3{
+    padding-bottom: 20px;
+}
+.Social-links h3{
+    padding-bottom: 20px;
 }
