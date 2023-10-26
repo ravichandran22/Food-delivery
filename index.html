@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./Stylesheet/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
 </head>
@@ -32,7 +33,7 @@
         </div>
         <div class="col-3">
           <div class="button" style="text-align: end;">
-            <button class="btn btn-primary" type="button">Book Now</button>
+            <button class="button-style" type="button">Book Now</button>
           </div>
         </div>
       </div>
@@ -41,9 +42,9 @@
   <!---Header section end here--->
   <div class="Banner">
     <div class="banner-contents">
-      <h1>Food Delivery</h1>
-      <p>The base .nav component is built with flexbox and provide a strong foundation for building all types of navigation components. It includes some style overrides (for working with lists), some link padding for larger hit areas, and basic disabled styling.</p>
-      <button type="button" class="btn btn-primary btn btn-lg">Book Now</button>
+      <h1 style="font-size: 70px;">Food Delivery</h1>
+      <p style="font-size: 20px;">The base .nav component is built with flexbox and provide a strong foundation for building all types of navigation components. It includes some style overrides (for working with lists), some link padding for larger hit areas, and basic disabled styling.</p>
+      <button type="button" class="banner-button-style">Book Now</button>
     </div>
   </div>
 
@@ -108,7 +109,7 @@
         <div class="banner-left-content">
           <h5>Best Sellers</h5>
           <h3>Shop the hits!</h3>
-          <button type="button" class="btn btn-success">Book Now</button>
+          <button type="button" class="button-style">Book Now</button>
         </div>
 
       </div>
@@ -116,7 +117,7 @@
         <div class="banner-right-content">
           <h5>Best Sellers</h5>
           <h3>Shop the hits!</h3>
-          <button type="button" class="btn btn-success">Book Now</button>
+          <button type="button" class="button-style">Book Now</button>
         </div>
         <img src="./Images/Burger.webp" width="600px">
       </div>
@@ -315,12 +316,13 @@
 </div>
 <!-----Blogs section end here----->
 
+
 <!-----Footer section start here----->
 <div class="footer">
   <div class="wrapper">
     <div class="row">
       <div class="col-3">
-        <a href="#">
+        <a href="#" style="color: #000; text-decoration: none;">
           <h1>R</h1>
         </a>
       </div>
@@ -328,10 +330,10 @@
         <div class="footer-links">
           <h3>Usefull Links</h3>
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Contact Us</li>
+            <li><a href="#" style="color: #000; text-decoration: none;"><span class="list-text">Home</span></a></li>
+            <li><a href="#" style="color: #000; text-decoration: none;"><span class="list-text">About</span></a></li>
+            <li><a href="#" style="color: #000; text-decoration: none;"><span class="list-text">Services</span></a></li>
+            <li><a href="#" style="color: #000; text-decoration: none;"><span class="list-text">Contact Us</span></a></li>
           </ul>
         </div>
       </div>
@@ -340,19 +342,19 @@
           <h3>Contact Us</h3>
           <ul>
             <li>
-              <a href="#">
+              <a href="tel:1234567890" style="color: #000; text-decoration: none;">
                 <span></span>
                 <p>1234567890</p>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="mailto:test123@gmail.com" style="color: #000; text-decoration: none;">
                 <span></span>
                 <p>test123@gmail.com</p>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://github.com/" style="color: #000; text-decoration: none;">
                 <span></span>
                 <p>github.com</p>
               </a>
@@ -364,14 +366,17 @@
         <div class="Social-links">
           <h3>Follow Us</h3>
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>Contact Us</li>
+            <li><a href="https://www.facebook.com/" style="color: #000;"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/" style="color: #000;"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/" style="color: #000;"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href="https://github.com/" style="color: #000;"><i class="fa-brands fa-github"></i></a></li>
           </ul>
         </div>
       </div>
     </div>
+  </div>
+  <div class="footer-bottom">
+    <p style="text-align: center;">Powered By Ravi</p>
   </div>
 </div>
 <!-----Footer section end here----->

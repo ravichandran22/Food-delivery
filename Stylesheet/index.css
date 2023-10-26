@@ -3,6 +3,34 @@
     margin: 0;
     font-family: 'Roboto';
 }
+/* Button Style */
+.button-style{
+    background-color: transparent;
+    border: 2px solid;
+    border-color: #000;
+    color: #000;
+    padding: 7px 20px;
+    font-size: 18px;
+    border-radius: 5px;   
+}
+.button-style:hover{
+    background-color: aliceblue;
+    color: #000;
+    border-color: aliceblue;
+}
+.banner-button-style{
+    background-color: transparent;
+    border: 2px solid;
+    border-color: aliceblue;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.banner-button-style:hover{
+    background-color: aliceblue;
+    color: #000;
+}
 /* Header */
 .header{
     padding: 20px 40px;
@@ -160,9 +188,12 @@
 
 /* Footer */
 .footer{
-    padding: 80px 40px;
+    padding: 0px 40px;
     overflow: hidden;
     background-color: aliceblue;
+}
+.footer .wrapper{
+    padding: 80px 0px;
 }
 .footer ul{
     list-style-type: none;
@@ -170,6 +201,7 @@
 }
 .footer ul li{
     padding-bottom: 10px;
+    font-size: 18px;
 }
 .footer-links h3{
     padding-bottom: 20px;
@@ -179,4 +211,53 @@
 }
 .Social-links h3{
     padding-bottom: 20px;
+}
+.footer-bottom{
+    border-style: solid;
+    border-width: 1px 1px 0px 1px;
+    border-color: #403E3C24;
+    border-radius: 25px 25px 0px 0px;
+    padding: 30px 0px;
+}
+.footer-bottom p{
+    margin-bottom: 0px;
+}
+.Social-links ul li{
+    display: inline-block;
+    padding: 0px 20px 0px 0px;
+    font-size: 20px;
+}
+.Contact-Us p {
+    margin-bottom: 0px;
+}
+/* Footer links styling */
+span.list-text{
+    display: inline-block;
+}
+span.list-text:after{
+    content: "";
+    display: block;
+    position: relative;
+    z-index: 1;
+    top: auto;
+    bottom: -3px;
+    left: 0;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    width: 0;
+    height: 1px;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: #221f44;
+}
+span.list-text:hover:after{
+    width: 100%;
+}
+span.list-text:hover{
+    margin-left: 9px;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
