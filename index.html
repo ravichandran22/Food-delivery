@@ -23,11 +23,19 @@
         </div>
         <div class="col-6">
           <div class="menu">
-            <ul>
-              <li>Home</li>
-              <li>About</li>
-              <li>Services</li>
-              <li>Contact Us</li>
+            <ul id="nav">
+              <li>
+                <a href="#" class="nav-link active">Home</a>
+              </li>
+              <li>
+                <a href="#" class="nav-link">About</a>
+              </li>
+              <li>
+                <a href="#" class="nav-link">Services</a>
+              </li>
+              <li>
+                <a href="#" class="nav-link">Contact Us</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -368,5 +376,22 @@
   </div>
 </div>
 <!-----Footer section end here----->
+<!---Nav active class script----->
+<script>
+// Get the container element
+var btnContainer = document.getElementById("nav");
+
+// Get all buttons with class="btn" inside the container
+var btns = btnContainer.getElementsByClassName("nav-link");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
 </body>
 </html>

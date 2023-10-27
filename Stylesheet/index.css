@@ -52,13 +52,48 @@
     list-style-type: none;
     justify-content: center;
     margin-bottom: 0px;
+    padding-left: 0px;
 }
 .menu ul li{
     display: inline-block;
-    padding: 10px;
+    padding: 0px;
     align-items: center;
     font-size: 18px;
 }
+.nav-link{
+    color: #000;
+}
+.nav{
+    position: relative;
+}
+a.nav-link:before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #e60b82;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+a.nav-link:hover:before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #e60b82;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+a.nav-link.active::before{
+    opacity: 1;
+}
+/* Banner */
 .Banner{
     background-image: url("../Images/indian-condiments-with-copy-space-view.jpg");
     background-position: center;
