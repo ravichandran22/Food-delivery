@@ -25,23 +25,20 @@
           <div class="menu">
             <ul id="nav">
               <li>
-                <a href="#" class="nav-link active">Home</a>
+                <a href="./about.html" class="nav-link">About</a>
               </li>
               <li>
-                <a href="#" class="nav-link">About</a>
+                <a href="./services.html" class="nav-link">Services</a>
               </li>
               <li>
-                <a href="#" class="nav-link">Services</a>
-              </li>
-              <li>
-                <a href="#" class="nav-link">Contact Us</a>
+                <a href="./contact.html" class="nav-link">Contact Us</a>
               </li>
             </ul>
           </div>
         </div>
         <div class="col-3">
           <div class="button" style="text-align: end;">
-            <button class="button-style" type="button">Book Now</button>
+            <button class="button-style open-button" type="button" onclick="openForm()">Book Now</button>
           </div>
         </div>
       </div>
@@ -52,7 +49,7 @@
     <div class="banner-contents">
       <h1 style="font-size: 70px;">Food Delivery</h1>
       <p style="font-size: 20px;">The base .nav component is built with flexbox and provide a strong foundation for building all types of navigation components. It includes some style overrides (for working with lists), some link padding for larger hit areas, and basic disabled styling.</p>
-      <button type="button" class="banner-button-style">Book Now</button>
+      <button type="button" class="banner-button-style open-button" onclick="openForm()">Book Now</button>
     </div>
   </div>
 
@@ -312,7 +309,26 @@
 </div>
 <!-----Blogs section end here----->
 
+<!---Popup form---->
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <i class="fa-solid fa-xmark" onclick="closeForm()"></i>
+    <h1 style="text-align: center;">Book Now</h1>
 
+    <div class="row">
+      <div class="col-6">
+        <input type="text" placeholder="First Name*" name="fname" required>
+      </div>
+      <div class="col-6">
+        <input type="text" placeholder="Last Name*" name="lname" required>
+      </div>
+      <div class="col-12">
+        <input type="email" placeholder="Enter Email Address*" name="email" required>
+        <button type="submit" class="btn">Book Now</button>
+      </div>
+    </div>
+  </form>
+</div>
 <!-----Footer section start here----->
 <div class="footer">
   <div class="wrapper">
@@ -388,9 +404,24 @@ var btns = btnContainer.getElementsByClassName("nav-link");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
     var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
+
+    // If there's no active class
+    if (current.length > 0) {
+      current[0].className = current[0].className.replace(" active", "");
+    }
+
+    // Add the active class to the current/clicked button
     this.className += " active";
   });
+}
+
+// Popup form
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
 }
 </script>
 </body>

@@ -59,6 +59,7 @@
     padding: 0px;
     align-items: center;
     font-size: 18px;
+    position: relative;
 }
 .nav-link{
     color: #000;
@@ -66,7 +67,7 @@
 .nav{
     position: relative;
 }
-a.nav-link:before{
+a.nav-link::before{
     content: '';
     position: absolute;
     left: 0px;
@@ -314,4 +315,64 @@ span.list-text:hover{
     -webkit-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease;
+}
+
+/* Popup form */
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    border-radius: 35px;
+    background-color: #fff;
+    padding: 60px 40px;
+}
+  
+/* Add styles to the form container */
+.form-container {
+    max-width: 500px;
+}
+  
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type="email"] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border-bottom: 1px solid #ddd;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: #fff;
+}
+  
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=email]:focus {
+    background-color: #fff;
+    outline: none;
+}
+  
+/* Set a style for the submit/login button */
+.form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+  
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+.fa-solid{
+    position: absolute;
+    right: 40px;
+    font-size: 20px;
+    cursor: pointer;
 }
